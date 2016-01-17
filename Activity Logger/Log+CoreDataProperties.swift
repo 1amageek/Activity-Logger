@@ -2,7 +2,7 @@
 //  Log+CoreDataProperties.swift
 //  Activity Logger
 //
-//  Created by 1amageek on 2016/01/17.
+//  Created by 1amageek on 2016/01/18.
 //  Copyright © 2016年 Stamp inc. All rights reserved.
 //
 //  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu

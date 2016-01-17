@@ -26,7 +26,7 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
             let controllers = split.viewControllers
             self.detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? DetailViewController
         }
-        
+        ActivityLogger.sharedLogger.managedObjectContext = self.managedObjectContext
         ActivityLogger.sharedLogger.start()
         
     }
@@ -115,7 +115,14 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
 
     func configureCell(cell: UITableViewCell, atIndexPath indexPath: NSIndexPath) {
         let object = self.fetchedResultsController.objectAtIndexPath(indexPath)
-        cell.textLabel!.text = object.valueForKey("timeStamp")!.description
+        let latitude = object.valueForKey("latitude")
+        let longitude = object.valueForKey("longitude")
+        let timeStamp: NSDate = object.valueForKey("timeStamp") as! NSDate
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.locale = NSLocale(localeIdentifier: "en_US") // ロケールの設定
+        dateFormatter.dateFormat = "HH:mm:ss" // 日付フォーマットの設定
+        cell.textLabel!.text = dateFormatter.stringFromDate(timeStamp)
+        cell.detailTextLabel!.text = (latitude?.stringValue)! + " " + (longitude?.stringValue)!
     }
 
     // MARK: - Fetched results controller
