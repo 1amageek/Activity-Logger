@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1237C62B1C54E43700139159 /* Log+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1237C6291C54E43700139159 /* Log+CoreDataProperties.swift */; };
+		1237C62C1C54E43700139159 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1237C62A1C54E43700139159 /* Log.swift */; };
 		128EA78A1C4BBA9F00AC34E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128EA7891C4BBA9F00AC34E8 /* AppDelegate.swift */; };
 		128EA78D1C4BBA9F00AC34E8 /* Activity_Logger.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 128EA78B1C4BBA9F00AC34E8 /* Activity_Logger.xcdatamodeld */; };
 		128EA78F1C4BBA9F00AC34E8 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128EA78E1C4BBA9F00AC34E8 /* MasterViewController.swift */; };
@@ -15,11 +17,11 @@
 		128EA7961C4BBA9F00AC34E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 128EA7951C4BBA9F00AC34E8 /* Assets.xcassets */; };
 		128EA7991C4BBA9F00AC34E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 128EA7971C4BBA9F00AC34E8 /* LaunchScreen.storyboard */; };
 		128EA7A11C4BBC8100AC34E8 /* ActivityLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128EA7A01C4BBC8100AC34E8 /* ActivityLogger.swift */; };
-		128EA7B01C4BEF9E00AC34E8 /* Log+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128EA7AE1C4BEF9E00AC34E8 /* Log+CoreDataProperties.swift */; };
-		128EA7B11C4BEF9E00AC34E8 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128EA7AF1C4BEF9E00AC34E8 /* Log.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1237C6291C54E43700139159 /* Log+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Log+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		1237C62A1C54E43700139159 /* Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		128EA7861C4BBA9F00AC34E8 /* Activity Logger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Activity Logger.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		128EA7891C4BBA9F00AC34E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		128EA78C1C4BBA9F00AC34E8 /* Activity_Logger.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Activity_Logger.xcdatamodel; sourceTree = "<group>"; };
@@ -30,8 +32,6 @@
 		128EA7981C4BBA9F00AC34E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		128EA79A1C4BBA9F00AC34E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		128EA7A01C4BBC8100AC34E8 /* ActivityLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityLogger.swift; sourceTree = "<group>"; };
-		128EA7AE1C4BEF9E00AC34E8 /* Log+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Log+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		128EA7AF1C4BEF9E00AC34E8 /* Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +48,8 @@
 		128EA77D1C4BBA9F00AC34E8 = {
 			isa = PBXGroup;
 			children = (
+				1237C6291C54E43700139159 /* Log+CoreDataProperties.swift */,
+				1237C62A1C54E43700139159 /* Log.swift */,
 				128EA7881C4BBA9F00AC34E8 /* Activity Logger */,
 				128EA7871C4BBA9F00AC34E8 /* Products */,
 			);
@@ -64,8 +66,6 @@
 		128EA7881C4BBA9F00AC34E8 /* Activity Logger */ = {
 			isa = PBXGroup;
 			children = (
-				128EA7AE1C4BEF9E00AC34E8 /* Log+CoreDataProperties.swift */,
-				128EA7AF1C4BEF9E00AC34E8 /* Log.swift */,
 				128EA7891C4BBA9F00AC34E8 /* AppDelegate.swift */,
 				128EA78E1C4BBA9F00AC34E8 /* MasterViewController.swift */,
 				128EA7901C4BBA9F00AC34E8 /* DetailViewController.swift */,
@@ -155,8 +155,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				128EA7B01C4BEF9E00AC34E8 /* Log+CoreDataProperties.swift in Sources */,
-				128EA7B11C4BEF9E00AC34E8 /* Log.swift in Sources */,
+				1237C62B1C54E43700139159 /* Log+CoreDataProperties.swift in Sources */,
+				1237C62C1C54E43700139159 /* Log.swift in Sources */,
 				128EA78D1C4BBA9F00AC34E8 /* Activity_Logger.xcdatamodeld in Sources */,
 				128EA78A1C4BBA9F00AC34E8 /* AppDelegate.swift in Sources */,
 				128EA78F1C4BBA9F00AC34E8 /* MasterViewController.swift in Sources */,
@@ -309,6 +309,7 @@
 				128EA79F1C4BBA9F00AC34E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

@@ -1,14 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="15C50" minimumToolsVersion="Automatic">
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="15D21" minimumToolsVersion="Automatic">
     <entity name="Log" representedClassName=".Log">
+        <attribute name="automotive" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="confidence" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
         <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="running" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="stationary" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="timeStamp" optional="YES" attributeType="Date">
             <userInfo/>
         </attribute>
+        <attribute name="unknown" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="walking" optional="YES" attributeType="Boolean" syncable="YES"/>
         <userInfo/>
     </entity>
     <elements>
-        <element name="Log" positionX="261" positionY="189" width="128" height="90"/>
+        <element name="Log" positionX="261" positionY="189" width="128" height="180"/>
     </elements>
 </model>

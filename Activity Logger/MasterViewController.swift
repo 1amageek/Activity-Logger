@@ -122,7 +122,7 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
         dateFormatter.locale = NSLocale(localeIdentifier: "en_US") // ロケールの設定
         dateFormatter.dateFormat = "HH:mm:ss" // 日付フォーマットの設定
         cell.textLabel!.text = dateFormatter.stringFromDate(timeStamp)
-        cell.detailTextLabel!.text = (latitude?.stringValue)! + " " + (longitude?.stringValue)!
+        cell.detailTextLabel!.text = (latitude?.stringValue)! + " " + (longitude?.stringValue)! + object.description
     }
 
     // MARK: - Fetched results controller

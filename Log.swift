@@ -2,7 +2,7 @@
 //  Log.swift
 //  Activity Logger
 //
-//  Created by 1amageek on 2016/01/18.
+//  Created by 1amageek on 2016/01/24.
 //  Copyright © 2016年 Stamp inc. All rights reserved.
 //
 
